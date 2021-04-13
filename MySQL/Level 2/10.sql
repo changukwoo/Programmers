@@ -1,0 +1,9 @@
+SELECT ANIMAL_ID, NAME, 
+CASE
+    WHEN SEX_UPON_INTAKE = "Neutered Male"
+    THEN "O"
+    WHEN SEX_UPON_INTAKE = "Spayed Female"
+    THEN "O"
+    ELSE "X"
+END AS Áß¼ºÈ­
+FROM ANIMAL_INS ORDER BY ANIMAL_ID ASC    
